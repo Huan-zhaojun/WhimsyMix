@@ -1,0 +1,12 @@
+{
+  "explosion": {
+    "subtitle": "explosion",
+    "replace": "false",
+    "sounds": [
+      {
+        "name": "${mod_id}:explosion",
+        "stream": true
+      }
+    ]
+  }
+}

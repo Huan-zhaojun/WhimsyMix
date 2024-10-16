@@ -165,6 +165,10 @@ tasks.named('processResources', ProcessResources).configure {
     filesMatching(['META-INF/mods.toml', 'pack.mcmeta']) {
         expand replaceProperties + [project: project]
     }
+
+    filesMatching('**/*.json') {  //过滤所有 JSON 文件
+        expand replaceProperties  //替换占位符
+    }
 }
 
 // Example for how to get properties into the manifest for reading at runtime.

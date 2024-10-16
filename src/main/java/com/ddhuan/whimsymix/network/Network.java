@@ -1,5 +1,6 @@
 package com.ddhuan.whimsymix.network;
 
+import com.ddhuan.whimsymix.network.Client.CameraShakePack;
 import com.ddhuan.whimsymix.whimsymix;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.network.NetworkRegistry;
@@ -18,6 +19,6 @@ public class Network {
     }
 
     public static void registerMessage() {
-
+        INSTANCE.registerMessage(nextID(), CameraShakePack.class, CameraShakePack::toBytes, CameraShakePack::new, CameraShakePack::handler);
         }
 }

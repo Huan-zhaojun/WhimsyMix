@@ -1,5 +1,6 @@
 package com.ddhuan.whimsymix;
 
+import com.ddhuan.whimsymix.common.SoundEventRegistry;
 import com.ddhuan.whimsymix.common.block.BlockRegistry;
 import com.ddhuan.whimsymix.common.entity.EntityTypeRegistry;
 import com.ddhuan.whimsymix.common.entity.render.EntityRenderRegistryManager;
@@ -34,6 +35,7 @@ public class whimsymix {
         ItemRegistry.ITEMS.register(modEventBus);
         EntityTypeRegistry.ENTITIES.register(modEventBus);
         BlockRegistry.BLOCKS.register(modEventBus);
+        SoundEventRegistry.SOUNDS.register(modEventBus);
         //FluidRegistry.FLUIDS.register(modEventBus);
         //EnchantmentRegistry.ENCHANTMENTS.register(modEventBus);
         //TileEntityTypeRegistry.TILE_ENTITIES.register(modEventBus);
@@ -58,7 +60,8 @@ public class whimsymix {
         event.enqueueWork(() -> {
             //注册方块渲染器
             BlockRegistry.setBlockRenderType();
-
+            //添加物品标签谓词
+            ItemRegistry.registerPredicates();
             //注册流体渲染器
             //setFluidRenderType();
         });

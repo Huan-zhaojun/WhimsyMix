@@ -1,0 +1,11 @@
+{
+  "language.name": "English",
+  "language.region": "United States",
+  "language.code": "en_us",
+
+  "itemGroup.whimsymix": "whimsymix",
+
+  "item.${mod_id}.split_heaven_great_axe": "Split Heaven Great Axe",
+
+  "entity.${mod_id}.item_entity":"item entity"
+}

@@ -1,0 +1,19 @@
+{
+  "parent": "item/generated",
+  "textures": {
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "${mod_id}:red_axe": 0
+      },
+      "model": "whimsymix:item/split_heaven_great_axe1"
+    },
+    {
+      "predicate": {
+        "${mod_id}:red_axe": 1
+      },
+      "model": "whimsymix:item/split_heaven_great_axe2"
+    }
+  ]
+}

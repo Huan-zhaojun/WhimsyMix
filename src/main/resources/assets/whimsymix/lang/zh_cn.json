@@ -1,0 +1,11 @@
+{
+  "language.region": "China",
+  "language.name": "Simplified Chinese",
+  "language.code": "zh_cn",
+
+  "itemGroup.whimsymix": "whimsymix",
+
+  "item.${mod_id}.split_heaven_great_axe": "开天神斧",
+
+  "entity.${mod_id}.item_entity":"item entity"
+}
